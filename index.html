@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة القبول لبرنامج التجسير - جامعة الملك خالد</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <h1 class="university-name">
+                        <i class="fas fa-university"></i>
+                        جامعة الملك خالد
+                    </h1>
+                    <h2 class="program-name">برنامج التجسير</h2>
+                </div>
+                <div class="header-info">
+                    <p class="tagline">بوابة القبول الإلكتروني لحملة الدبلوم</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="main-title">بوابة القبول لبرنامج التجسير <span>(لحملة الدبلوم)</span></h1>
+                <p class="hero-description">
+                    برنامج مقدم من جامعة الملك خالد ممثلة بمعهد الدراسات والخدمات الاستشارية 
+                    وبالتعاون مع أكاديمية الطاقة والمياه EWA.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Majors Section -->
+    <section class="majors">
+        <div class="container">
+            <h2 class="section-title">التخصصات المتاحة</h2>
+            <div class="majors-grid">
+                <div class="major-card">
+                    <div class="major-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>الهندسة الكهربائية</h3>
+                    <p>برنامج متخصص لتأهيل خريجي الدبلوم في مجال الهندسة الكهربائية لتلبية احتياجات سوق العمل.</p>
+                </div>
+                <div class="major-card">
+                    <div class="major-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>الهندسة الميكانيكية</h3>
+                    <p>برنامج تأهيلي متقدم لتطوير مهارات خريجي الدبلوم في مجال الهندسة الميكانيكية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section class="application-form">
+        <div class="container">
+            <h2 class="section-title">نموذج طلب التقديم</h2>
+            <p class="form-description">يرجى ملء جميع الحقول الإلزامية (<span class="required">*</span>) بدقة</p>
+            
+            <form id="applicationForm">
+                <div class="form-grid">
+                    <!-- Full Name -->
+                    <div class="form-group full-width">
+                        <label for="fullName">الاسم الكامل (ثلاثي أو رباعي) <span class="required">*</span></label>
+                        <input type="text" id="fullName" name="fullName" required>
+                        <div class="error-message" id="fullNameError"></div>
+                    </div>
+
+                    <!-- ID/Iqama Number -->
+                    <div class="form-group">
+                        <label for="idNumber">رقم الهوية / الإقامة <span class="required">*</span></label>
+                        <input type="text" id="idNumber" name="idNumber" maxlength="10" required>
+                        <div class="error-message" id="idNumberError"></div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+
+                    <!-- Mobile Number -->
+                    <div class="form-group">
+                        <label for="mobile">رقم الجوال <span class="required">*</span></label>
+                        <input type="tel" id="mobile" name="mobile" required>
+                        <div class="error-message" id="mobileError"></div>
+                    </div>
+
+                    <!-- Major Selection -->
+                    <div class="form-group full-width">
+                        <label>اختيار التخصص <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="electrical" name="major" value="electrical" required>
+                                <label for="electrical">الهندسة الكهربائية</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="mechanical" name="major" value="mechanical" required>
+                                <label for="mechanical">الهندسة الميكانيكية</label>
+                            </div>
+                        </div>
+                        <div class="error-message" id="majorError"></div>
+                    </div>
+
+                    <!-- Diploma Issuer -->
+                    <div class="form-group">
+                        <label for="diplomaIssuer">اسم جهة الحصول على الدبلوم <span class="required">*</span></label>
+                        <input type="text" id="diplomaIssuer" name="diplomaIssuer" required>
+                        <div class="error-message" id="diplomaIssuerError"></div>
+                    </div>
+
+                    <!-- GPA -->
+                    <div class="form-group">
+                        <label for="gpa">معدل الدبلوم التراكمي <span class="required">*</span></label>
+                        <input type="number" id="gpa" name="gpa" step="0.01" min="0" max="5" required>
+                        <div class="error-message" id="gpaError"></div>
+                    </div>
+
+                    <!-- Diploma Upload -->
+                    <div class="form-group full-width">
+                        <label for="diplomaFile">رفع شهادة الدبلوم (PDF فقط) <span class="required">*</span></label>
+                        <div class="file-upload">
+                            <input type="file" id="diplomaFile" name="diplomaFile" accept=".pdf" required>
+                            <label for="diplomaFile" class="file-upload-label">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <span>اختر ملف PDF</span>
+                            </label>
+                            <div id="fileName"></div>
+                        </div>
+                        <div class="error-message" id="diplomaFileError"></div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="submit-section">
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        تقديم الطلب
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Success Message Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>تم استلام طلبك بنجاح</h3>
+            <p>سيتم التواصل معك قريباً عبر البريد الإلكتروني أو رقم الجوال المسجل.</p>
+            <button class="modal-btn" id="closeModal">موافق</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3><i class="fas fa-university"></i> جامعة الملك خالد</h3>
+                    <p>جميع الحقوق محفوظة &copy; <span id="currentYear"></span></p>
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-info-circle"></i> للاستفسارات: bridge-program@kku.edu.sa</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

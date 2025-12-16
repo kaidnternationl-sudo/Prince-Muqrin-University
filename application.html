@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج التقديم - برنامج التجسير</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>جامعة الملك خالد</h1>
+                        <p>KING KHALID UNIVERSITY</p>
+                    </div>
+                </div>
+                <div class="ewa-logo">
+                    <div class="ewa-icon">
+                        <i class="fas fa-bolt"></i>
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="ewa-text">
+                        <h2>أكاديمية الطاقة والمياه</h2>
+                        <p>ENERGY & WATER ACADEMY</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header-bottom">
+                <div class="application-header">
+                    <h1 class="main-title">
+                        <i class="fas fa-file-alt"></i>
+                        نموذج التقديم لبرنامج التجسير (Tajseer)
+                    </h1>
+                    <div class="application-steps">
+                        <div class="step active">
+                            <span class="step-number">1</span>
+                            <span class="step-text">الشروط</span>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step active">
+                            <span class="step-number">2</span>
+                            <span class="step-text">تعبئة النموذج</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Application Form -->
+    <section class="application-form">
+        <div class="container">
+            <form id="tajseerForm">
+                <!-- Personal Information Section -->
+                <div class="form-section">
+                    <div class="section-header">
+                        <i class="fas fa-user-circle"></i>
+                        <h2>I. البيانات الشخصية</h2>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <!-- Gender -->
+                        <div class="form-group">
+                            <label for="Gender">
+                                <i class="fas fa-venus-mars"></i>
+                                الجنس
+                                <span class="required">*</span>
+                            </label>
+                            <select id="Gender" name="Gender" required>
+                                <option value="">اختر الجنس</option>
+                                <option value="Male">ذكر</option>
+                                <option value="Female">أنثى</option>
+                            </select>
+                        </div>
+
+                        <!-- National ID -->
+                        <div class="form-group">
+                            <label for="NationalId">
+                                <i class="fas fa-id-card"></i>
+                                رقم الهوية
+                                <span class="required">*</span>
+                            </label>
+                            <input type="text" id="NationalId" name="NationalId" maxlength="10" required>
+                        </div>
+
+                        <!-- English Names -->
+                        <div class="form-group">
+                            <label for="FirstNameEn">
+                                <i class="fas fa-font"></i>
+                                الاسم الأول (بالإنجليزية)
+                                <span class="required">*</span>
+                            </label>
+                            <input type="text" id="FirstNameEn" name="FirstNameEn" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="FatherNameEn">اسم الأب (بالإنجليزية) <span class="required">*</span></label>
+                            <input type="text" id="FatherNameEn" name="FatherNameEn" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="GrandfatherNameEn">اسم الجد (بالإنجليزية) <span class="required">*</span></label>
+                            <input type="text" id="GrandfatherNameEn" name="GrandfatherNameEn" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="LastNameEn">اسم العائلة (بالإنجليزية) <span class="required">*</span></label>
+                            <input type="text" id="LastNameEn" name="LastNameEn" required>
+                        </div>
+
+                        <!-- Arabic Names -->
+                        <div class="form-group">
+                            <label for="FirstNameAr">الاسم الأول (بالعربية) <span class="required">*</span></label>
+                            <input type="text" id="FirstNameAr" name="FirstNameAr" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="FatherNameAr">اسم الأب (بالعربية) <span class="required">*</span></label>
+                            <input type="text" id="FatherNameAr" name="FatherNameAr" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="GrandfatherNameAr">اسم الجد (بالعربية) <span class="required">*</span></label>
+                            <input type="text" id="GrandfatherNameAr" name="GrandfatherNameAr" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="LastNameAr">اسم العائلة (بالعربية) <span class="required">*</span></label>
+                            <input type="text" id="LastNameAr" name="LastNameAr" required>
+                        </div>
+
+                        <!-- Nationality -->
+                        <div class="form-group">
+                            <label for="Nationality">الجنسية <span class="required">*</span></label>
+                            <select id="Nationality" name="Nationality" required>
+                                <option value="">اختر الجنسية</option>
+                                <option value="SA">سعودي</option>
+                                <option value="OTH">أخرى</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="MotherNationality">جنسية الأم <span class="required">*</span></label>
+                            <select id="MotherNationality" name="MotherNationality" required>
+                                <option value="">اختر الجنسية</option>
+                                <option value="SA">سعودي</option>
+                                <option value="OTH">أخرى</option>
+                            </select>
+                        </div>
+
+                        <!-- Marital Status -->
+                        <div class="form-group">
+                            <label for="MaritalStatus">الحالة الاجتماعية <span class="required">*</span></label>
+                            <select id="MaritalStatus" name="MaritalStatus" required>
+                                <option value="">اختر الحالة</option>
+                                <option value="Single">أعزب</option>
+                                <option value="Married">متزوج</option>
+                                <option value="Divorced">مطلق</option>
+                                <option value="Widowed">أرمل</option>
+                            </select>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="form-group">
+                            <label for="MobileNo">
+                                <i class="fas fa-phone"></i>
+                                رقم الجوال
+                                <span class="required">*</span>
+                            </label>
+                            <input type="tel" id="MobileNo" name="MobileNo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Email">
+                                <i class="fas fa-envelope"></i>
+                                البريد الإلكتروني
+                                <span class="required">*</span>
+                            </label>
+                            <input type="email" id="Email" name="Email" required>
+                        </div>
+
+                        <!-- Disability -->
+                        <div class="form-group full-width">
+                            <label>هل أنت من ذوي الاحتياجات الخاصة؟ <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="disabilityYes" name="Disability" value="Yes" required>
+                                    <label for="disabilityYes">نعم</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="disabilityNo" name="Disability" value="No" required>
+                                    <label for="disabilityNo">لا</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="HealthStatusDesc">وصف الحالة (إن وجد)</label>
+                            <textarea id="HealthStatusDesc" name="HealthStatusDesc" rows="3"></textarea>
+                        </div>
+
+                        <!-- Education Type -->
+                        <div class="form-group">
+                            <label for="EducationType">نوع الدراسة <span class="required">*</span></label>
+                            <select id="EducationType" name="EducationType" required>
+                                <option value="">اختر نوع الدراسة</option>
+                                <option value="Regular">منتظم</option>
+                                <option value="Distance">تعليم عن بعد</option>
+                            </select>
+                        </div>
+
+                        <!-- Birth Date -->
+                        <div class="form-group">
+                            <label for="BirthDate">
+                                <i class="fas fa-calendar-alt"></i>
+                                تاريخ الميلاد
+                                <span class="required">*</span>
+                            </label>
+                            <input type="date" id="BirthDate" name="BirthDate" required>
+                        </div>
+
+                        <!-- Employment -->
+                        <div class="form-group full-width">
+                            <label>هل أنت موظف؟ <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="employeeYes" name="IsEmployee" value="Yes" required>
+                                    <label for="employeeYes">نعم</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="employeeNo" name="IsEmployee" value="No" required>
+                                    <label for="employeeNo">لا</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="CompanyName">اسم الشركة (إن وجد)</label>
+                            <input type="text" id="CompanyName" name="CompanyName">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="EmployeeDesc">وصف الوظيفة (إن وجد)</label>
+                            <input type="text" id="EmployeeDesc" name="EmployeeDesc">
+                        </div>
+
+                        <!-- Diploma Major -->
+                        <div class="form-group">
+                            <label for="MajorGraduated">التخصص المتخرج منه <span class="required">*</span></label>
+                            <input type="text" id="MajorGraduated" name="MajorGraduated" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- High School Information -->
+                <div class="form-section">
+                    <div class="section-header">
+                        <i class="fas fa-school"></i>
+                        <h2>II. بيانات الثانوية</h2>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="HighSchoolCity">المدينة <span class="required">*</span></label>
+                            <input type="text" id="HighSchoolCity" name="HighSchoolCity" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="HighSchoolName">اسم الثانوية <span class="required">*</span></label>
+                            <input type="text" id="HighSchoolName" name="HighSchoolName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="HighSchoolGraduatedYear">سنة الحصول على الشهادة <span class="required">*</span></label>
+                            <input type="number" id="HighSchoolGraduatedYear" name="HighSchoolGraduatedYear" 
+                                   min="1400" max="1445" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="HighSchoolType">نوع الشهادة <span class="required">*</span></label>
+                            <select id="HighSchoolType" name="HighSchoolType" required>
+                                <option value="">اختر النوع</option>
+                                <option value="Scientific">علمي</option>
+                                <option value="Literary">أدبي</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="DegreeLevel">المستوى <span class="required">*</span></label>
+                            <select id="DegreeLevel" name="DegreeLevel" required>
+                                <option value="">اختر المستوى</option>
+                                <option value="Secondary">ثانوية عامة</option>
+                                <option value="Equivalent">شهادة معادلة</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="HighSchoolGrade">الدرجة <span class="required">*</span></label>
+                            <input type="text" id="HighSchoolGrade" name="HighSchoolGrade" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tests Information -->
+                <div class="form-section">
+                    <div class="section-header">
+                        <i class="fas fa-clipboard-check"></i>
+                        <h2>III. بيانات الاختبارات</h2>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="EnglishLevel">مستوى اللغة الإنجليزية <span class="required">*</span></label>
+                            <select id="EnglishLevel" name="EnglishLevel" required>
+                                <option value="">اختر المستوى</option>
+                                <option value="Beginner">مبتدئ</option>
+                                <option value="Intermediate">متوسط</option>
+                                <option value="Advanced">متقدم</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="STEPGrade">درجة كفايات (STEP) <span class="required">*</span></label>
+                            <input type="number" id="STEPGrade" name="STEPGrade" min="0" max="100" step="0.01" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Qudrat">درجة القدرات <span class="required">*</span></label>
+                            <input type="number" id="Qudrat" name="Qudrat" min="0" max="100" step="0.01" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Tahseli">درجة التحصيلي <span class="required">*</span></label>
+                            <input type="number" id="Tahseli" name="Tahseli" min="0" max="100" step="0.01" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diploma/University Information -->
+                <div class="form-section">
+                    <div class="section-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h2>IV. بيانات الدبلوم/الجامعية</h2>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="UniversityCountry">بلد الحصول على الشهادة <span class="required">*</span></label>
+                            <select id="UniversityCountry" name="UniversityCountry" required>
+                                <option value="">اختر البلد</option>
+                                <option value="SA">المملكة العربية السعودية</option>
+                                <option value="OTH">دولة أخرى</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="UniversityRegion">المنطقة <span class="required">*</span></label>
+                            <input type="text" id="UniversityRegion" name="UniversityRegion" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="UniversityCity">المدينة <span class="required">*</span></label>
+                            <input type="text" id="UniversityCity" name="UniversityCity" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="UniversityName">اسم الجامعة/المعهد <span class="required">*</span></label>
+                            <input type="text" id="UniversityName" name="UniversityName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="UniversityGraduatedYear">سنة التخرج <span class="required">*</span></label>
+                            <input type="number" id="UniversityGraduatedYear" name="UniversityGraduatedYear" 
+                                   min="1400" max="1445" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="UniversityMajor">التخصص <span class="required">*</span></label>
+                            <input type="text" id="UniversityMajor" name="UniversityMajor" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="UniversityGrade">التقدير <span class="required">*</span></label>
+                            <select id="UniversityGrade" name="UniversityGrade" required>
+                                <option value="">اختر التقدير</option>
+                                <option value="Excellent">ممتاز</option>
+                                <option value="VeryGood">جيد جداً</option>
+                                <option value="Good">جيد</option>
+                                <option value="Pass">مقبول</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Gpa">المعدل التراكمي (GPA) <span class="required">*</span></label>
+                            <input type="number" id="Gpa" name="Gpa" min="0" max="5" step="0.01" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="GpaFrom">المعدل من <span class="required">*</span></label>
+                            <select id="GpaFrom" name="GpaFrom" required>
+                                <option value="">اختر النظام</option>
+                                <option value="4.00">4.00</option>
+                                <option value="5.00">5.00</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guardian Information -->
+                <div class="form-section">
+                    <div class="section-header">
+                        <i class="fas fa-user-shield"></i>
+                        <h2>V. بيانات ولي الأمر</h2>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="GuardianName">اسم ولي الأمر <span class="required">*</span></label>
+                            <input type="text" id="GuardianName" name="GuardianName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="GuardianNationalId">رقم هوية ولي الأمر <span class="required">*</span></label>
+                            <input type="text" id="GuardianNationalId" name="GuardianNationalId" maxlength="10" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="GuardianRelation">صلة القرابة <span class="required">*</span></label>
+                            <select id="GuardianRelation" name="GuardianRelation" required>
+                                <option value="">اختر صلة القرابة</option>
+                                <option value="Father">أب</option>
+                                <option value="Mother">أم</option>
+                                <option value="Brother">أخ</option>
+                                <option value="Sister">أخت</option>
+                                <option value="Uncle">عم/خال</option>
+                                <option value="Other">آخر</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="GuardianAddress">عنوان ولي الأمر <span class="required">*</span></label>
+                            <input type="text" id="GuardianAddress" name="GuardianAddress" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="GuardianMobileNo">رقم جوال ولي الأمر <span class="required">*</span></label>
+                            <input type="tel" id="GuardianMobileNo" name="GuardianMobileNo" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program Information -->
+                <div class="form-section">
+                    <div class="section-header">
+                        <i class="fas fa-briefcase"></i>
+                        <h2>VI. التخصص المطلوب</h2>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="TajseerMajor">برنامج التجسير المطلوب <span class="required">*</span></label>
+                            <select id="TajseerMajor" name="TajseerMajor" required>
+                                <option value="">اختر التخصص</option>
+                                <option value="Electrical">الهندسة الكهربائية</option>
+                                <option value="Mechanical">الهندسة الميكانيكية</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="TrainingPlace">اختر مكان التدريب <span class="required">*</span></label>
+                            <select id="TrainingPlace" name="TrainingPlace" required>
+                                <option value="">اختر مكان التدريب</option>
+                                <option value="Riyadh">الرياض</option>
+                                <option value="Jeddah">جدة</option>
+                                <option value="Dammam">الدمام</option>
+                                <option value="Abha">أبها</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Actions -->
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="backBtn">
+                        <i class="fas fa-arrow-circle-right"></i> الرجوع للشروط
+                    </button>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                        <i class="fas fa-paper-plane"></i> تقديم الطلب
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>تم استلام طلبك بنجاح</h3>
+            <p>سيتم التواصل معك قريباً عبر البريد الإلكتروني أو رقم الجوال المسجل.</p>
+            <button class="modal-btn" id="closeModal">موافق</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p><i class="fas fa-link"></i> ewa-sys.info/apex/r/ta/lc-app1391401</p>
+                    <p><i class="fas fa-envelope"></i> info@tajseer.kku.edu.sa</p>
+                    <p><i class="fas fa-phone"></i> 920000000</p>
+                </div>
+                <div class="copyright">
+                    <p>جميع الحقوق محفوظة &copy; <span id="currentYear"></span> جامعة الملك خالد</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script>
+        // Set current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Initialize phone inputs
+        const mobileInput = document.querySelector("#MobileNo");
+        const guardianMobileInput = document.querySelector("#GuardianMobileNo");
+        
+        // Initialize phone input with Saudi Arabia as default
+        if(mobileInput) {
+            window.intlTelInput(mobileInput, {
+                initialCountry: "sa",
+                separateDialCode: true,
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+            });
+        }
+        
+        if(guardianMobileInput) {
+            window.intlTelInput(guardianMobileInput, {
+                initialCountry: "sa",
+                separateDialCode: true,
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+            });
+        }
+        
+        // Handle back button
+        document.getElementById('backBtn').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+        
+        // Handle form submission
+        document.getElementById('tajseerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic validation
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.style.borderColor = '#f44336';
+                } else {
+                    field.style.borderColor = '#ddd';
+                }
+            });
+            
+            if (isValid) {
+                // Show success modal
+                document.getElementById('successModal').style.display = 'flex';
+                
+                // Reset form after 2 seconds (for demo)
+                setTimeout(() => {
+                    this.reset();
+                }, 2000);
+            } else {
+                alert('يرجى ملء جميع الحقول الإلزامية');
+            }
+        });
+        
+        // Close modal
+        document.getElementById('closeModal').addEventListener('click', function() {
+            document.getElementById('successModal').style.display = 'none';
+        });
+        
+        // Validate National ID
+        function validateNationalId(id) {
+            return /^\d{10}$/.test(id);
+        }
+        
+        // Add validation for National ID fields
+        const nationalIdInput = document.getElementById('NationalId');
+        const guardianNationalIdInput = document.getElementById('GuardianNationalId');
+        
+        if(nationalIdInput) {
+            nationalIdInput.addEventListener('blur', function() {
+                if(this.value && !validateNationalId(this.value)) {
+                    alert('رقم الهوية يجب أن يكون 10 أرقام');
+                    this.focus();
+                }
+            });
+        }
+        
+        if(guardianNationalIdInput) {
+            guardianNationalIdInput.addEventListener('blur', function() {
+                if(this.value && !validateNationalId(this.value)) {
+                    alert('رقم هوية ولي الأمر يجب أن يكون 10 أرقام');
+                    this.focus();
+                }
+            });
+        }
+        
+        // Validate GPA
+        const gpaInput = document.getElementById('Gpa');
+        if(gpaInput) {
+            gpaInput.addEventListener('blur', function() {
+                const value = parseFloat(this.value);
+                if(value < 0 || value > 5) {
+                    alert('المعدل التراكمي يجب أن يكون بين 0 و 5');
+                    this.focus();
+                }
+            });
+        }
+    </script>
+</body>
+                                  </html>
